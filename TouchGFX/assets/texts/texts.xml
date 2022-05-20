@@ -4,15 +4,46 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Group1">
+      <Text Id="left_text" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">value is &lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_C2EO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="valueInPpm1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">503</Translation>
+      </Text>
+      <Text Id="valueInPpm2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">937</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_3FFR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="textArea2Buffer" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"> 0</Translation>
+      </Text>
+      <Text Id="ResourceId2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_2WKT" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_FI71" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;valoare_t2&gt;  ppm</Translation>
+      </Text>
+      <Text Id="__SingleUse_4F8R" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB"> counter:  &lt;value&gt; </Translation>
+      </Text>
       <Text Id="__SingleUse_GDHW" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">LED ON/OFF</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="!-~" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>

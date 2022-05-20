@@ -7,6 +7,8 @@
 CPP_SRCS += \
 ../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.cpp \
 ../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.cpp \
 ../TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.cpp \
 ../TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.cpp \
 ../TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.cpp \
@@ -16,6 +18,8 @@ CPP_SRCS += \
 OBJS += \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.o \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.o \
 ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.o \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.o \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.o \
@@ -25,6 +29,8 @@ OBJS += \
 CPP_DEPS += \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.d \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.d \
 ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.d \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.d \
 ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.d \
@@ -39,7 +45,7 @@ TouchGFX/generated/images/src/__designer/%.o TouchGFX/generated/images/src/__des
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 
 clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer:
-	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.su ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.su ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.d ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.o ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.su ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.d ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.o ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.su ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.d ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.o ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.su ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.d ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.o ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.su ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.d ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.o ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.su
+	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small.su ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_small_pressed.su ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button.su ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_icon_button_pressed.su ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.d ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.o ./TouchGFX/generated/images/src/__designer/image_Blue_PageIndicator_dot_indicator_large_highlight.su ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.d ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.o ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_OFF.su ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.d ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.o ./TouchGFX/generated/images/src/__designer/image_Blue_Togglebars_Toggle_round_large_button_ON.su ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.d ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.o ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Home_48.su ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.d ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.o ./TouchGFX/generated/images/src/__designer/image_Dark_Icons_Sound_32.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 

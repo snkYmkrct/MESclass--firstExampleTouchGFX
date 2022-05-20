@@ -3,17 +3,69 @@
 /*********************************************************************************/
 #include <gui_generated/screen2_screen/Screen2ViewBase.hpp>
 #include <touchgfx/Color.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
+#include <BitmapDatabase.hpp>
 
-Screen2ViewBase::Screen2ViewBase()
+Screen2ViewBase::Screen2ViewBase() :
+    buttonCallback(this, &Screen2ViewBase::buttonCallbackHandler)
 {
 
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
+    box1.setPosition(0, 0, 320, 240);
+    box1.setColor(touchgfx::Color::getColorFromRGB(195, 184, 222));
+
+    box2.setPosition(79, 60, 163, 33);
+    box2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+
+    textArea1.setPosition(95, 62, 130, 30);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(191, 38, 38));
+    textArea1.setLinespacing(0);
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_3FFR).getText());
+    textArea1.setWildcard(textArea1Buffer);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4F8R));
+
+    box3.setPosition(79, 112, 163, 32);
+    box3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+
+    textArea2.setPosition(95, 114, 130, 30);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(176, 62, 237));
+    textArea2.setLinespacing(0);
+    textArea2.setWildcard(touchgfx::TypedText(T_TEXTAREA2BUFFER).getText());
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FI71));
+
+    button1.setXY(130, 164);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    button1.setAction(buttonCallback);
+
     add(__background);
+    add(box1);
+    add(box2);
+    add(textArea1);
+    add(box3);
+    add(textArea2);
+    add(button1);
 }
 
 void Screen2ViewBase::setupScreen()
 {
 
+}
+
+void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &button1)
+    {
+        //Interaction1
+        //When button1 clicked call virtual function
+        //Call functia_mea
+        functia_mea();
+
+        //Interaction3
+        //When button1 clicked set wildcard textArea2
+        //Set textArea2 wildcard to valueInPpm1
+        textArea2.setWildcard(touchgfx::TypedText(T_VALUEINPPM1).getText());
+        textArea2.invalidate();
+    }
 }

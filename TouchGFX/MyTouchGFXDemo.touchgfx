@@ -146,8 +146,119 @@
       },
       {
         "Name": "Screen2",
-        "Components": [],
-        "Interactions": []
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 195,
+              "Green": 184,
+              "Blue": 222
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 79,
+            "Y": 60,
+            "Width": 163,
+            "Height": 33,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 95,
+            "Y": 62,
+            "Width": 130,
+            "Height": 30,
+            "TextId": "__SingleUse_4F8R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 191,
+              "Green": 38,
+              "Blue": 38
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3FFR",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box3",
+            "X": 79,
+            "Y": 112,
+            "Width": 163,
+            "Height": 32,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 95,
+            "Y": 114,
+            "Width": 130,
+            "Height": 30,
+            "TextId": "__SingleUse_FI71",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 176,
+              "Green": 62,
+              "Blue": 237
+            },
+            "Wildcard1": {
+              "TextId": "textArea2Buffer"
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 130,
+            "Y": 164,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "functia_mea"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionSetWildcard",
+              "TextId": "valueInPpm1",
+              "WildcardLocation": "Wildcard1",
+              "ActionComponent": "textArea2"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
@@ -157,7 +268,7 @@
       "Height": 320
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
+    "StartupScreenName": "Screen2",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
