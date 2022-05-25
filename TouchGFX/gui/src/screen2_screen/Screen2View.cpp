@@ -1,5 +1,6 @@
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <touchgfx/utils.hpp>
 
 Screen2View::Screen2View():
     counter(0), i(0),
@@ -7,6 +8,13 @@ Screen2View::Screen2View():
 {
 	}
 
+void Screen2View::functia_mea()
+{
+
+    textArea2.setWildcard(touchgfx::TypedText(T_VALUEINPPM1).getText());
+    textArea2.invalidate();
+    touchgfx_printf("Application is running through simulator! \n");
+}
 
 void Screen2View::updateTxt(int newValue)
 {
@@ -18,7 +26,7 @@ void Screen2View::handleTickEvent()
 {
     counter++;
 
-    if(counter%120 == 0) // every 2s
+    if(counter%60 == 0) // every 1 s
     {
     	i++;
     	updateTxt(i);

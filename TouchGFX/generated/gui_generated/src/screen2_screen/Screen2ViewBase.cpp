@@ -39,6 +39,13 @@ Screen2ViewBase::Screen2ViewBase() :
     button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     button1.setAction(buttonCallback);
 
+    digitalClock1.setPosition(113, 12, 95, 32);
+    digitalClock1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    digitalClock1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3OTQ));
+    digitalClock1.displayLeadingZeroForHourIndicator(true);
+    digitalClock1.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
+    digitalClock1.setTime24Hour(10, 10, 0);
+
     add(__background);
     add(box1);
     add(box2);
@@ -46,6 +53,7 @@ Screen2ViewBase::Screen2ViewBase() :
     add(box3);
     add(textArea2);
     add(button1);
+    add(digitalClock1);
 }
 
 void Screen2ViewBase::setupScreen()
@@ -61,11 +69,5 @@ void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When button1 clicked call virtual function
         //Call functia_mea
         functia_mea();
-
-        //Interaction3
-        //When button1 clicked set wildcard textArea2
-        //Set textArea2 wildcard to valueInPpm1
-        textArea2.setWildcard(touchgfx::TypedText(T_VALUEINPPM1).getText());
-        textArea2.invalidate();
     }
 }

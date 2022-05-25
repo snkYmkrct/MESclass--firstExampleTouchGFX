@@ -231,6 +231,19 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Round_icon_button.png"
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock1",
+            "X": 113,
+            "Y": 12,
+            "Width": 95,
+            "Height": 32,
+            "TextId": "__SingleUse_3OTQ",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 10,
+            "InitialMinute": 10
           }
         ],
         "Interactions": [
@@ -243,19 +256,6 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "functia_mea"
-            }
-          },
-          {
-            "InteractionName": "Interaction3",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "button1"
-            },
-            "Action": {
-              "Type": "ActionSetWildcard",
-              "TextId": "valueInPpm1",
-              "WildcardLocation": "Wildcard1",
-              "ActionComponent": "textArea2"
             }
           }
         ]

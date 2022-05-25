@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
 
 class Screen2ViewBase : public touchgfx::View<Screen2Presenter>
 {
@@ -41,6 +42,7 @@ protected:
     touchgfx::Box box3;
     touchgfx::TextAreaWithOneWildcard textArea2;
     touchgfx::Button button1;
+    touchgfx::DigitalClock digitalClock1;
 
     /*
      * Wildcard Buffers

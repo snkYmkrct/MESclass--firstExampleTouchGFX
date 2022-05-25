@@ -16,6 +16,8 @@ public:
     virtual void handleTickEvent();
     virtual void updateTxt(int newValue);
 
+    virtual void functia_mea();
+
 protected:
     uint8_t counter, i;
     bool flag;
