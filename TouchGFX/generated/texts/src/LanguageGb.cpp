@@ -13,6 +13,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     43, // T___SingleUse_C2EO
     52, // T_valueInPpm1
     56, // T_valueInPpm2
+    30, // T___SingleUse_SG43
     30, // T___SingleUse_3OTQ
     61, // T___SingleUse_3FFR
     60, // T_textArea2Buffer
