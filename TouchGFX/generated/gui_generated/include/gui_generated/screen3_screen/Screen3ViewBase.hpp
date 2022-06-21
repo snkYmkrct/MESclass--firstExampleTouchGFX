@@ -32,10 +32,10 @@ protected:
     touchgfx::Box box1;
     touchgfx::Box box2;
     touchgfx::GraphScroll<100> dynamicGraph;
-    touchgfx::GraphElementArea dynamicGraphArea1;
-    touchgfx::PainterRGB565 dynamicGraphArea1Painter;
-    touchgfx::GraphElementLine dynamicGraphLine1;
-    touchgfx::PainterRGB565 dynamicGraphLine1Painter;
+    touchgfx::GraphElementArea ;
+    touchgfx::PainterRGB565 Painter;
+    touchgfx::GraphElementLine ;
+    touchgfx::PainterRGB565 Painter;
     touchgfx::GraphLabelsX dynamicGraphMajorXAxisLabel;
 
 private:

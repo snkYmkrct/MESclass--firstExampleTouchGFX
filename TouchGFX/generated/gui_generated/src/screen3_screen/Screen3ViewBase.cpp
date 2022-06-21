@@ -33,15 +33,15 @@ Screen3ViewBase::Screen3ViewBase()
     dynamicGraphMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(61, 153, 50));
     dynamicGraph.addBottomElement(dynamicGraphMajorXAxisLabel);
 
-    dynamicGraphLine1Painter.setColor(touchgfx::Color::getColorFromRGB(33, 196, 22));
-    dynamicGraphLine1.setPainter(dynamicGraphLine1Painter);
-    dynamicGraphLine1.setLineWidth(5);
-    dynamicGraph.addGraphElement(dynamicGraphLine1);
+    Painter.setColor(touchgfx::Color::getColorFromRGB(33, 196, 22));
+    .setPainter(Painter);
+    .setLineWidth(5);
+    dynamicGraph.addGraphElement();
 
-    dynamicGraphArea1Painter.setColor(touchgfx::Color::getColorFromRGB(196, 22, 124));
-    dynamicGraphArea1.setPainter(dynamicGraphArea1Painter);
-    dynamicGraphArea1.setBaseline(0);
-    dynamicGraph.addGraphElement(dynamicGraphArea1);
+    Painter.setColor(touchgfx::Color::getColorFromRGB(196, 22, 124));
+    .setPainter(Painter);
+    .setBaseline(0);
+    dynamicGraph.addGraphElement();
 
     add(__background);
     add(box1);
